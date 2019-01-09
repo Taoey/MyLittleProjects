@@ -1,10 +1,8 @@
 package com.tao;
 
 import org.apache.commons.io.FileUtils;
-import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;
-import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
 import org.junit.Test;
@@ -131,7 +129,7 @@ public class Main {
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
         //指定逆向工程配置文件
-        File configFile = new File("E:\\projects\\longmao-work\\project\\MybatisGenertor\\SpringBootLearn\\src\\main\\resources\\mybatis-genertor.xml");
+        File configFile = new File("E:\\projects\\back-end\\MyLittleProjects\\MyBatisGenerator\\src\\main\\resources\\mybatis-genertor.xml");
 
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(configFile);
