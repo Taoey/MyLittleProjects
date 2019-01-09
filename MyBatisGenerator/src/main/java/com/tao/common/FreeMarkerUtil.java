@@ -15,10 +15,10 @@ public class FreeMarkerUtil {
 
     /**
      * 根据模板建立一个模板文件
-     * @param templateDirectory
-     * @param templateFileName
-     * @param outFilePath
-     * @param map
+     * @param templateDirectory 模板文件目录
+     * @param templateFileName  模板文件名
+     * @param outFilePath       输出文件位置
+     * @param map               map数据
      * @throws IOException
      * @throws TemplateException
      */

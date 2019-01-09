@@ -24,7 +24,7 @@
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- targetProject:mapper映射文件生成的位置 -->
-        <sqlMapGenerator targetPackage="${daotargetPackage}"
+        <sqlMapGenerator targetPackage="${mapperPackage}"
                          targetProject="${targetProject}">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
@@ -36,8 +36,6 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table tableName="iaccount_bill"/>
-        <table tableName="iaccount_rel_bill_tag"/>
-        <table tableName="iaccount_tag"/>
+        <table tableName="system_task"/>
     </context>
 </generatorConfiguration>
